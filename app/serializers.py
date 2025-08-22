@@ -9,24 +9,24 @@ class DirectorSerializer(serializers.ModelSerializer):
 
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Director
+        model = Movie
         fields = '__all__'
         many = True
 
 class PlanSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Director
+        model = Plan
         fields = '__all__'
         many = True
 
 class UserPlanSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Director
+        model = UserPlan
         fields = '__all__'
         many = True
 
 class FavoriteMovieSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Director
+        model = FavoriteMovie
         fields = '__all__'
         many = True
